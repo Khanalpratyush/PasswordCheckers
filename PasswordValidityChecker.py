@@ -21,9 +21,9 @@ def strong_password(users_password):
 
 def strong_password_regex(users_password):
     
-	upper_regex = re.compile(r'[A-Z]+')
-	lower_regex = re.compile(r'[a-z]+')
-	number =re.compile(r'[0-9]+')
+	upper_regex = re.compile(r'[A-Z]+') #upper letters
+	lower_regex = re.compile(r'[a-z]+') #lower letters
+	number =re.compile(r'[0-9]+') #number 
 	if not upper_regex.findall(users_password):
 		return 'uppercase letter is required'
 	if not lower_regex.findall(users_password):
